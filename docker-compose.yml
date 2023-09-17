@@ -1,0 +1,9 @@
+version: '3'
+services:
+  docker-pi-dashboard:
+    image: ecat/docker-pi-dashboard
+    container_name: docker-pi-dashboard
+    environment:
+      - LISTEN=1024
+    network_mode: host
+    restart: always
